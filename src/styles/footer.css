@@ -1,0 +1,130 @@
+.footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: var(--spacing-12) var(--spacing-6);
+    border-top: 1px solid var(--color-gray-800);
+}
+
+.footer-container {
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer-info {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-info {
+        text-align: left;
+    }
+}
+
+.footer-brand {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-2);
+    background: linear-gradient(to right, var(--color-emerald-400), var(--color-cyan-400));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-title {
+    color: var(--color-gray-400);
+}
+
+.footer-links {
+    display: flex;
+    gap: var(--spacing-6);
+    justify-content: center;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-gray-900);
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-gray-800);
+    transition: var(--transition);
+}
+
+.footer-link:hover {
+    background-color: var(--color-gray-800);
+    transform: scale(1.1);
+}
+
+.footer-link svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.footer-bottom {
+    margin-top: var(--spacing-8);
+    padding-top: var(--spacing-8);
+    border-top: 1px solid var(--color-gray-800);
+    text-align: center;
+}
+
+.footer-credit {
+    color: var(--color-gray-400);
+    font-size: var(--font-size-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-4);
+}
+
+.footer-heart {
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-red-500);
+    fill: var(--color-red-500);
+}
+
+.footer-copyright {
+    color: var(--color-gray-500);
+    font-size: var(--font-size-xs);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: var(--spacing-8) var(--spacing-4);
+    }
+
+    .footer-content {
+        gap: var(--spacing-4);
+    }
+
+    .footer-links {
+        gap: var(--spacing-4);
+    }
+
+    .footer-link {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .footer-link svg {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}

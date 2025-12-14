@@ -10,7 +10,7 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-title">
-          Hello! I'm John
+          Hello! I'm Jonathan Cruz Martín
         </h1>
 
         <p className="hero-subtitle">
