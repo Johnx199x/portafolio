@@ -1,11 +1,14 @@
-import Hero from './components/hero'
-import './App.css'
+import Hero from './components/Hero'
+import Projects from './components/Projects'
+
+import './index.css'
 
 function App() {
 
   return (
     <>
       <Hero />
+      <Projects />
     </>
   )
 }
