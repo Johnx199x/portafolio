@@ -1,6 +1,6 @@
 import { Code, Server, Database, Layers } from 'lucide-react';
 import { skillsData } from '../data/skills';
-import type { ISkillCategory } from '../data/skills';
+import type { ISkillCategory } from '../types/index';
 import '../styles/skills.css';
 import type { JSX } from 'react';
 

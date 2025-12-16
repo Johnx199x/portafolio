@@ -1,3 +1,4 @@
+// src/data/skills.ts
 import reactIcon from '../assets/icons/react_dark.svg';
 import tsIcon from '../assets/icons/typescript.svg';
 import jsIcon from '../assets/icons/javascript.svg';
@@ -9,20 +10,9 @@ import sequelizeIcon from '../assets/icons/sequelize.svg';
 import postgresIcon from '../assets/icons/postgresql.svg';
 import gitIcon from '../assets/icons/git.svg';
 import githubIcon from '../assets/icons/github_dark.svg';
+import type { ISkillCategory } from '../types';
 
-export interface ISkill {
-  name: string;
-  icon: string;
-}
-
-export interface ISkillCategory {
-  title: string;
-  skills: ISkill[];
-}
-
-
-
-export const skillsData:ISkillCategory[] = [
+export const skillsData: ISkillCategory[] = [
   {
     title: 'Frontend',
     skills: [
