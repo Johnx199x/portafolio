@@ -54,13 +54,13 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
         </button>
 
         <div className="modal-header">
-          <div className="modal-title-wrapper">
+          
             <h2 className="modal-title">{project.title}</h2>
             <div className="modal-category">
               {categoryIcons[project.category]}
               <span>{project.category}</span>
             </div>
-          </div>
+          
         </div>
         {project.image && (
           <div className="modal-image-container">

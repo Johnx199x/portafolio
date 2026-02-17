@@ -4,7 +4,7 @@ import '../styles/footer.css';
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
+      
         <div className="footer-content">
           <div className="footer-info">
             <h3 className="footer-brand">John</h3>
@@ -47,10 +47,9 @@ export default function Footer() {
             Made with <Heart className="footer-heart" /> by John
           </p>
           <p className="footer-copyright">
-            {new Date().getFullYear()} All rights reserved
+            {new Date().getFullYear()} All rights are not reserved :3
           </p>
         </div>
-      </div>
     </footer>
   );
 }

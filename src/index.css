@@ -89,3 +89,15 @@ button {
 section {
   width: 100%;
 }
+
+.section-title {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-4);
+  text-align: center;
+}
+
+.section-subtitle {
+  color: var(--color-gray-400);
+  font-size: var(--font-size-lg);
+}

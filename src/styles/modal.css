@@ -4,8 +4,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,8 +30,8 @@
     border: 1px solid var(--color-gray-800);
     border-radius: 1rem;
     max-width: 56rem;
-    width: 100%;
-    max-height: 90vh;
+    width: 80%;
+    max-height: 80dvh;
     overflow-y: auto;
     position: relative;
     animation: slideUp 0.3s ease-out;
@@ -81,12 +81,11 @@
     padding: var(--spacing-8);
     padding-right: 4rem;
     border-bottom: 1px solid var(--color-gray-800);
-}
-
-.modal-title-wrapper {
     display: flex;
-    flex-direction: column;
     gap: var(--spacing-3);
+    flex-direction: column;
+
+
 }
 
 .modal-title {
@@ -117,6 +116,26 @@
     width: 1rem;
     height: 1rem;
 }
+
+.modal-image-container {
+    width: 60%;
+    margin: 1rem auto;
+    overflow: hidden;
+    border-bottom: 1px solid var(--color-gray-800);
+}
+
+.modal-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: var(--transition);
+}
+
+.modal-image:hover {
+    transform: scale(1.05);
+}
+
 
 .modal-body {
     padding: var(--spacing-8);
@@ -191,12 +210,6 @@
     color: var(--color-gray-300);
     font-size: var(--font-size-sm);
     border-radius: 0.375rem;
-    transition: var(--transition-fast);
-}
-
-.modal-tech-tag:hover {
-    border-color: var(--color-cyan-400);
-    background-color: var(--color-gray-700);
 }
 
 .modal-links-section {
@@ -278,34 +291,15 @@
     background: var(--color-gray-600);
 }
 
-.modal-image-container {
-    width: 60%;
-    margin: 1rem auto;
-    overflow: hidden;
-    border-bottom: 1px solid var(--color-gray-800);
-}
-
-.modal-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    display: block;
-    transition: var(--transition);
-}
-
-.modal-image:hover {
-    transform: scale(1.05);
-}
 
 /* Responsive */
 @media (max-width: 768px) {
     .modal-overlay {
         padding: 0;
-        align-items: flex-end;
     }
 
     .modal-content {
-        max-height: 95vh;
+        max-height: 80dvh;
         border-radius: 1rem 1rem 0 0;
         animation: slideUpMobile 0.3s ease-out;
     }

@@ -5,10 +5,8 @@
     right: 0;
     z-index: 50;
     transition: var(--transition);
-}
 
-.navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.80);
     backdrop-filter: blur(4px);
     border-bottom: 1px solid var(--color-gray-800);
 }
@@ -78,15 +76,13 @@
     align-items: center;
     justify-content: center;
     color: var(--color-white);
-    background: none;
-    border: none;
     cursor: pointer;
     width: 1.5rem;
     height: 1.5rem;
 }
 
 .navbar-mobile-menu {
-    display: none;
+    display: flex;
     margin-top: var(--spacing-4);
     padding-bottom: var(--spacing-4);
     gap: var(--spacing-4);

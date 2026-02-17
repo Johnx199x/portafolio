@@ -14,10 +14,10 @@ const categoryIcons: Record<string, JSX.Element> = {
 export default function Skills() {
   return (
     <section id="skills" className="skills">
-      <div className="skills-container">
+    
         <div className="skills-header">
-          <h2 className="skills-title">Technologies & Tools</h2>
-          <p className="skills-subtitle">
+          <h2 className="section-title">Technologies & Tools</h2>
+          <p className="section-subtitle">
             Tools and technologies I work with
           </p>
         </div>
@@ -25,12 +25,13 @@ export default function Skills() {
         <div className="skills-grid">
           {skillsData.map((category: ISkillCategory) => (
             <div key={category.title} className="skill-card">
-              <div className="skill-icon">
+              <div className="skills-grid-card-header">
+              <span className="skill-icon">
                 {categoryIcons[category.title]}
-              </div>
+              </span>
 
               <h3 className="skill-title">{category.title}</h3>
-
+            </div>
               <ul className="skill-list">
                 {category.skills.map(skill => (
                   <li key={skill.name} className="skill-item">
@@ -46,7 +47,6 @@ export default function Skills() {
             </div>
           ))}
         </div>
-      </div>
     </section>
   );
 }

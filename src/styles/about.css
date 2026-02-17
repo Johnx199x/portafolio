@@ -2,9 +2,6 @@
     background-color: var(--color-black);
     color: var(--color-white);
     padding: var(--spacing-12) var(--spacing-6);
-}
-
-.about-container {
     max-width: 72rem;
     margin: 0 auto;
 }
@@ -14,12 +11,7 @@
     padding: var(--spacing-8);
 }
 
-.about-title {
-    font-size: var(--font-size-2xl);
-    font-weight: 700;
-    margin-bottom: var(--spacing-4);
-    text-align: center;
-}
+
 
 .about-text {
     color: var(--color-gray-400);

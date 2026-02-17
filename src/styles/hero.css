@@ -1,17 +1,11 @@
 .hero {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background: linear-gradient(135deg, var(--color-black) 0%, var(--color-gray-950) 50%, var(--color-black) 100%);
-    color: var(--color-white);
-    padding: var(--spacing-6);
-}
-
-.hero-content {
-    max-width: 56rem;
-    margin: 0 auto;
     text-align: center;
+    color: var(--color-white);
+    padding: var(--spacing-4);
 }
 
 .hero-icon {
@@ -82,36 +76,28 @@
     font-weight: 500;
 }
 
-.hero-button-secondary {
+.hero-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.hero-button-github {
     background-color: var(--color-gray-800);
     color: var(--color-white);
     border: 1px solid var(--color-gray-700);
 }
 
-.hero-button-secondary:hover {
-    background-color: var(--color-gray-700);
-    transform: scale(1.05);
-}
 
-.hero-button-primary {
+.hero-button-gmail {
     background-color: var(--color-emerald-600);
     color: var(--color-white);
 }
 
-.hero-button-primary:hover {
-    background-color: var(--color-emerald-500);
-    transform: scale(1.05);
-}
-
-.hero-button-info {
+.hero-button-linkedin {
     background-color: var(--color-blue-600);
     color: var(--color-white);
 }
 
-.hero-button-info:hover {
-    background-color: var(--color-blue-500);
-    transform: scale(1.05);
-}
 
 .hero-button svg {
     width: 1.25rem;
@@ -137,7 +123,7 @@
     }
 
     .hero-button {
-        width: 100%;
+        width: 90%;
         justify-content: center;
     }
 }

@@ -4,7 +4,7 @@ import '../styles/hero.css';
 export default function Hero() {
   return (
     <section id="hero" className="hero">
-      <div className="hero-content">
+      
         <div className="hero-icon">
           <Code2 />
         </div>
@@ -27,7 +27,7 @@ export default function Hero() {
             href="https://github.com/Johnx199x"
             target="_blank"
             rel="noopener noreferrer"
-            className="hero-button hero-button-secondary"
+            className="hero-button hero-button-github"
           >
             <Github />
             <span>GitHub</span>
@@ -35,23 +35,22 @@ export default function Hero() {
 
           <a
             href="mailto:jeremydev666@gmail.com"
-            className="hero-button hero-button-primary"
+            className="hero-button hero-button-gmail"
           >
             <Mail />
-            <span>Contacto</span>
+            <span>Contact</span>
           </a>
 
           <a
             href="https://www.linkedin.com/in/jonathan-cruz-martin-741a30268/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hero-button hero-button-info"
+            className="hero-button hero-button-linkedin"
           >
             <Linkedin />
             <span>LinkedIn</span>
           </a>
         </div>
-      </div>
     </section>
   );
 }
